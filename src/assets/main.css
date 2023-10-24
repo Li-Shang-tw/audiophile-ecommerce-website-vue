@@ -1,2 +1,77 @@
 @import './reset.css';
 
+/*--color--varaible---*/
+:root{
+    --primary:#101010;
+    --primary-heavy:#000000;
+    --secondary:#D87D4A;
+    --secondary-light:#fbaf85;
+    --text-heavy:#F1F1F1;
+    --text-medium:#FAFAFA;
+    --text-light:#FFFFFF;
+}
+
+/*----typography---*/
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing:2px;
+}
+h1{
+    font-size: 3.5rem;
+   line-height: 1.0357em;
+   letter-spacing:2px;
+}
+h2{
+    font-size: 2.5rem;
+    line-height: 1.1em;
+    letter-spacing:1.5px;    
+}
+h3{
+    font-size: 2rem;
+    line-height: 1.25em;
+    letter-spacing:1.15px;    
+
+}
+h4{
+    font-size: 1.75rem;
+    line-height: 1.357em;
+    word-spacing:2px;    
+
+}
+
+h5{
+    font-size: 1.5rem;
+    line-height: 1.375em;
+    letter-spacing:1.7px;    
+
+}
+
+h6{
+    font-size: 1.125rem;
+    line-height: 1.333em;
+    letter-spacing:1.3px;    
+
+}
+
+.overline {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.333em;
+    letter-spacing:10px;    
+}
+.subtitle{
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1.923em;
+    letter-spacing:1px;    
+
+
+}
