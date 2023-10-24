@@ -4,8 +4,10 @@ import TheNavigator from './components/TheNavigator.vue';
 </script>
 
 <template>
+  
  <TheNavigator/>
   <RouterView />
+
 </template>
 
 <style scoped>
