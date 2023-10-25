@@ -93,6 +93,13 @@ h6{
     color:var(--secondary)
 }
 
+@media (min-width: 600px){
+    body{      
+        text-align: left;
+        
+    }
+  }
+
   @media (min-width: 1200px){
     .container{
         width:85%;        
