@@ -80,6 +80,15 @@
 .nav__list__item{
 color:var( --text-heavy);
 }
+
+.nav__logo{
+  margin-left: 0;
+}
+
+.nav__list{
+  margin-left:auto;
+}
+
 }
 
 </style>

@@ -1,9 +1,9 @@
 <template>
   <section class="cta container">
     <div class="cta__img">      
-      <img v-if="mediaType=='mobile'" src="../../public/assets/shared/mobile/image-best-gear.jpg" alt="cta-img-mobile">
-      <img v-else-if="mediaType=='laptop'" src="../../public/assets/shared/tablet/image-best-gear.jpg" alt="cta-img-laptop">
-      <img v-else-if="mediaType=='desktop'" src="../../public/assets/shared/desktop/image-best-gear.jpg" alt="cta-img-desktop">
+      <img v-if="mediaType=='mobile'" class="round_corner" src="../../public/assets/shared/mobile/image-best-gear.jpg" alt="cta-img-mobile">
+      <img v-else-if="mediaType=='laptop'" class="round_corner" src="../../public/assets/shared/tablet/image-best-gear.jpg" alt="cta-img-laptop">
+      <img v-else-if="mediaType=='desktop'" class="round_corner" src="../../public/assets/shared/desktop/image-best-gear.jpg" alt="cta-img-desktop">
     </div>
     <div class="cta__content">
       <h4 class="cta__content__title">  Bringing you the <strong class="emphasis_word">best</strong>  audio gear
