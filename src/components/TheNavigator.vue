@@ -8,18 +8,30 @@
       <img src="../../public/assets/shared/desktop/logo.svg" alt="logo">
     </div>   
       <ul class="nav__list">
-        <li class="nav__list__item" >
+        <router-link to="/">
+          <li class="nav__list__item" >
          <h6>home</h6>     
         </li>
-        <li class="nav__list__item">
+        </router-link>
+
+        <router-link to="/catergory/headphones">
+          <li class="nav__list__item">
           <h6>headphone</h6>  
         </li>
-        <li class="nav__list__item">
+        </router-link>
+
+        <router-link to="/catergory/speakers">
+          <li class="nav__list__item">
           <h6>speakers</h6> 
         </li>
-        <li class="nav__list__item">
+        </router-link>
+
+        <router-link to="/catergory/earphones">
+          <li class="nav__list__item">
           <h6>earphones</h6> 
         </li>
+        </router-link>        
+      
       </ul>
     <div class="nav__cart_icon">
       <img src="../../public/assets/shared/desktop/icon-cart.svg" alt="cart">

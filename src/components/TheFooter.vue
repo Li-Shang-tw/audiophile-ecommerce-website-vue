@@ -6,18 +6,26 @@
                 <img src="../../public/assets/shared/desktop/logo.svg" alt="footer_logo">
             </div>
             <ul class="footer__nav__list">
+                <router-link to="/">
         <li class="footer__nav__list__item" >
          <h6>home</h6>     
         </li>
+    </router-link>
+    <router-link to="/catergory/headphones">
         <li class="footer__nav__list__item">
           <h6>headphone</h6>  
         </li>
+    </router-link>
+    <router-link to="/catergory/speakers">
         <li class="footer__nav__list__item">
           <h6>speakers</h6> 
         </li>
+    </router-link>
+    <router-link to="/catergory/earphones">
         <li class="footer__nav__list__item">
           <h6>earphones</h6> 
         </li>
+    </router-link>
       </ul>
 
             </div>
@@ -56,6 +64,10 @@
 <style scoped>
 .footer{
     background: var(--primary);
+    color:var(--text-heavy)
+}
+/*--fix--router link style-- */
+a{
     color:var(--text-heavy)
 }
 

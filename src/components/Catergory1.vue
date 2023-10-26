@@ -4,26 +4,29 @@
             <div class="catergory__list__item__wrap">
             <img src="../../public/assets/shared/desktop/image-category-thumbnail-headphones.png" alt="headphones" class="catergory__list__item__img">
             <h6 class="catergory__list__item__title">Headphones</h6>
+            <router-link to="/catergory/headphones">
             <Button :type ="3"/>
+             </router-link>
              </div>
              <div class="catergory__list__item__bg"></div>            
         </li>
         <li class="catergory__list__item">
-            <div class="catergory__list__item__wrap">
-                
-                    <img src="../../public/assets/shared/desktop/image-category-thumbnail-speakers.png" alt="speakers" class="catergory__list__item__img">
-                
-            
-            <h6 class="catergory__list__item__title">Speakers</h6>
-            <Button :type ="3"/>
-             </div>
-             <div class="catergory__list__item__bg"></div>            
+            <div class="catergory__list__item__wrap">                
+             <img src="../../public/assets/shared/desktop/image-category-thumbnail-speakers.png" alt="speakers" class="catergory__list__item__img">
+             <h6 class="catergory__list__item__title">Speakers</h6>
+             <router-link to="/catergory/speakers">
+             <Button :type ="3"/>
+             </router-link>
+            </div>
+            <div class="catergory__list__item__bg"></div>            
         </li>
         <li class="catergory__list__item">
             <div class="catergory__list__item__wrap">
             <img src="../../public/assets/shared/desktop/image-category-thumbnail-earphones.png" alt="earphones" class="catergory__list__item__img">
             <h6 class="catergory__list__item__title">Earphones</h6>
+            <router-link to="/catergory/earphones">
             <Button :type ="3"/>
+            </router-link>
              </div>
              <div class="catergory__list__item__bg"></div>            
         </li>

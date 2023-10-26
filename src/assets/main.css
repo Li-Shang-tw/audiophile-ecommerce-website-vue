@@ -95,6 +95,11 @@ img{
     color:var(--secondary)
 }
 
+/*--remove routerlink underline--*/
+a{
+    text-decoration: none;
+}
+
 @media (min-width: 600px){
     body{      
         text-align: left;
