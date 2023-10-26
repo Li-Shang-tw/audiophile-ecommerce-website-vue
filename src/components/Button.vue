@@ -32,7 +32,8 @@ color:var(--text-light);
 font-weight: 700;
 }
 .btn--2{
-   
+   background-color: var(--text-heavy);
+    font-weight: 700;
 }
 
 .btn__text--2{

@@ -1,7 +1,7 @@
 <template>
  <TheHero class="hero"/>
  <Catergory1/>
- <Catergory2/>
+ <HotProducts/>
 <CallToAction/>
 </template>
 
@@ -9,7 +9,7 @@
 import CallToAction from '../components/CallToAction.vue';
 import TheHero from '../components/TheHero.vue';
 import Catergory1 from '../components/Catergory1.vue';
-import Catergory2 from "../components/Catergory2.vue"
+import HotProducts from "../components/HotProducts.vue"
 
 </script>
 
