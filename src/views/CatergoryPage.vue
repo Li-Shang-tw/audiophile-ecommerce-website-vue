@@ -7,6 +7,8 @@
  <template v-for="(item, index) in productOfCatergory"  :key="item.id" >
     <ProductPreview :item="item" :page="'catergory'" class="container" :index="index"/>
 </template>
+<Catergory1/>
+<CallToAction/>
 
 </template>
 
@@ -15,6 +17,8 @@ import { defineProps,ref,watchEffect} from 'vue'
 
 //匯入元件
 import ProductPreview from "../components/ProductPreview.vue"
+import Catergory1 from '../components/catergory1.vue';
+import CallToAction from '../components/CallToAction.vue';
 //匯入資料
 import { useProductsStore } from '../stores/products';
 const productsStore =  useProductsStore();

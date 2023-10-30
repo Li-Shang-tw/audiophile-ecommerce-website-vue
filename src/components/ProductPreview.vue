@@ -7,6 +7,9 @@
       <img v-else-if="mediaType=='desktop'" class="product__img round_corner" :src="item.categoryImage.desktop" alt="product__img-mobile">
     </template>
      <template v-else-if="page==='detail'" >
+      <img v-if="mediaType=='mobile'" class="product__img round_corner" :src="item.image.mobile" alt="product__img-mobile">
+      <img v-else-if="mediaType=='laptop'" class="product__img round_corner" :src="item.image.tablet" alt="product__img-mobile">
+      <img v-else-if="mediaType=='desktop'" class="product__img round_corner" :src="item.image.desktop" alt="product__img-mobile">
     </template>
     </div>
     <div class="product__cotent">
@@ -15,7 +18,11 @@
         <h4 class="product__content__title">{{ item.name }}</h4>
       </div>        
         <p class="product__content__text">{{ item.description }}</p>
-        <Button class="prouduct__content__btn" :type="1"/>
+        <h6 v-if="page==='detail'" class="product__content__price">$ {{ item.price }}</h6>
+        <router-link :to="urlToDetail">
+          <Button class="prouduct__content__btn" :type="1"/>
+        </router-link>
+        
     </div>
   </div>
 </template>
@@ -28,7 +35,7 @@ import {useMediaDetative} from "../composables/useMediaDetative"
 const  {mediaType} = useMediaDetative();
 
 const isEven = computed(()=> props.index%2);
-
+const urlToDetail = computed(()=>"/"+props.item.category+"/"+props.item.id)
 
 </script>
 
@@ -44,14 +51,16 @@ const isEven = computed(()=> props.index%2);
 
 .product__img {
   margin-bottom: 1em;
-}
+} 
 .product__content__title{
   margin-bottom: 1em;
 }
 .product__content__text{
   margin-bottom: 1em;
 }
-
+.product__content__price{
+  margin-bottom: 1em;
+}
 
 @media(min-width:600px){ 
   .product{
